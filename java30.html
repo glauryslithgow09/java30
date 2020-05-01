@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function mostrarSeleccionado() {
+            if (document.getElementById('radio1').checked) {
+                alert(' ingresado al sitio');
+            }
+            if (document.getElementById('radio2').checked) {
+                alert('No puede ingresar al sitio');
+            }
+
+        }
+    </script>
+
+    <form>
+        <input type="radio" id="radio1" name="estudios">+18 años
+        <br>
+        <input type="radio" id="radio2" name="estudios">Menor de 18 años
+        <br>
+        <input type="button" value="Mostrar" onClick="mostrarSeleccionado()">
+    </form>
+
+</body>
+
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function mostrar() {
+            alert(document.getElementById("nombre").value)
+            alert(document.getElementById("mail").value)
+            alert(document.getElementById("comentarios").value)
+        }
+    </script>
+
+    <form>
+        Ingrese su Nombre<br>
+        <input type="text" id="nombre"><br><br> Ingrese su Mail:
+        <br>
+        <input type="text" id="mail"><br><br> Comentarios: <br>
+        <textarea id="comentarios" rows="10" cols="50"></textarea><br><br>
+        <input type="button" value="Mostrar" onclick="mostrar()">
+    </form>
+
+
+</body>
+
+</html>
